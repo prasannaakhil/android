@@ -1,0 +1,180 @@
+1-java.main activity
+2.first-xml file
+3.second-xml file
+
+
+
+
+1-java.mainactivity
+
+package com.example.amabti.listview2biggg;
+
+
+import android.content.Context;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class MainActivity extends AppCompatActivity {
+
+    ArrayList<HashMap<String,String>>arrayList;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        arrayList=new ArrayList<HashMap<String,String>>();
+
+        HashMap Hashmap1=new HashMap();
+        Hashmap1.put("city","hyd");
+        Hashmap1.put("state","ts");
+
+        HashMap Hashmap2=new HashMap();
+        Hashmap2.put("city","vskp");
+        Hashmap2.put("state","ap");
+
+        HashMap Hashmap3=new HashMap();
+        Hashmap3.put("city","mumbai");
+        Hashmap3.put("state","mp");
+
+        HashMap Hashmap4=new HashMap();
+        Hashmap4.put("city","chennai");
+        Hashmap4.put("state","tn");
+        HashMap Hashmap5=new HashMap();
+        Hashmap5.put("city","hyd");
+        Hashmap5.put("state","ts");
+
+        HashMap Hashmap6=new HashMap();
+        Hashmap6.put("city","vskp");
+        Hashmap6.put("state","ap");
+
+        HashMap Hashmap7=new HashMap();
+        Hashmap7.put("city","mumbai");
+        Hashmap7.put("state","mp");
+
+        HashMap Hashmap8=new HashMap();
+        Hashmap8.put("city","chennai");
+        Hashmap8.put("state","tn");
+
+        arrayList.add(Hashmap1);
+        arrayList.add(Hashmap2);
+        arrayList.add(Hashmap3);
+        arrayList.add(Hashmap4);
+        arrayList.add(Hashmap5);
+        arrayList.add(Hashmap6);
+        arrayList.add(Hashmap7);
+        arrayList.add(Hashmap8);
+
+
+        CustomArrayAdapter customarrayadapter=new CustomArrayAdapter(this,R.layout.list_main1);
+        
+	//ListView listview=(ListView)findViewById(R.id.listview);
+        //listview.setAdapter(customarrayadapter);
+        
+	GridView grid =(GridView)findViewById(R.id.grid);
+        grid.setAdapter(customarrayadapter);
+    }
+    public class CustomArrayAdapter extends ArrayAdapter{
+    public CustomArrayAdapter(@NonNull Context context, @LayoutRes int resource){
+        super(context,resource);
+    }
+    @Override
+    public int getCount() {
+        return arrayList.size();
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        View v=convertView;
+        LayoutInflater inflater=(LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        v=inflater.inflate(R.layout.list_main1,null);
+        TextView tv1=(TextView)v.findViewById(R.id.tv1);
+        TextView tv2=(TextView)v.findViewById(R.id.tv2);
+
+        HashMap<String,String>statecity=(HashMap<String,String>)arrayList.get(position);
+
+        tv1.setText(statecity.get("city"));
+        tv2.setText(statecity.get("state"));
+
+
+        return v;
+    }
+}
+}
+
+
+
+
+
+
+2.first-xml 
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amabti.listview2biggg.MainActivity">
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:numColumns="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+3.second-xml
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp" />
+</LinearLayout>

@@ -1,0 +1,240 @@
+this contains a sample fourm showing radio ,checkbox & button.
+
+1.java
+2.xml
+
+
+
+1.java
+
+
+
+
+        CheckBox cb=(CheckBox)findViewById(R.id.cb88);
+        cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    Toast.makeText(MainActivity.this, "terms and conditions accpeted", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "accept terms and conditions", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        Button b2=(Button)findViewById(R.id.button2);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText ed1=(EditText)findViewById(R.id.editText);
+                ed1.setText("");
+                EditText ed2=(EditText)findViewById(R.id.ed2);
+                ed2.setText("");
+                EditText ed3=(EditText)findViewById(R.id.ed3);
+                ed3.setText("");
+                EditText ed4=(EditText)findViewById(R.id.ed4);
+                ed4.setText("");
+                EditText ed5=(EditText)findViewById(R.id.ed5);
+                ed5.setText("");
+
+            }
+        });
+
+        Button b1=(Button)findViewById(R.id.button);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "your details have been submitted", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
+
+
+2.xml
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/cb88"
+        android:layout_alignStart="@+id/cb88" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phne"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/ed1"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toLeftOf="@+id/radioGroup"
+            android:layout_toStartOf="@+id/radioGroup" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:layout_above="@+id/ed1"
+            android:layout_alignLeft="@+id/radioButton7"
+            android:layout_alignStart="@+id/radioButton7" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/ed4"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="collage"
+        android:layout_above="@+id/textView6"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aadar.no"
+        android:layout_alignBaseline="@+id/ed5"
+        android:layout_alignBottom="@+id/ed5"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="city"
+        android:layout_below="@+id/ed4"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/cb88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="please accept the terms and conditions"
+        android:layout_below="@+id/ed5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/cb88"
+        android:layout_alignStart="@+id/cb88"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/cb88"
+        android:layout_alignEnd="@+id/cb88" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/ed4"
+        android:layout_alignStart="@+id/ed4" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/ed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ed1"
+        android:layout_alignStart="@+id/ed1" />
+
+    <EditText
+        android:id="@+id/ed4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/ed3"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/ed5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/cb88"
+        android:layout_alignEnd="@+id/cb88" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed2"
+        android:layout_alignStart="@+id/ed2"
+        android:layout_below="@+id/ed2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+

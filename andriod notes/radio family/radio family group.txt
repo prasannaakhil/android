@@ -1,0 +1,157 @@
+this is to explain about radio groups such has options which are present in choose the correct answers in online.
+
+
+1.java
+2.xml
+
+
+1.java
+
+        final RadioGroup rg1=(RadioGroup)findViewById(R.id.rg1);
+        final RadioGroup rg2=(RadioGroup)findViewById(R.id.rg2);
+        Button button=(Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(MainActivity.this, "your feedback was collected", Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder alert1=new AlertDialog.Builder(MainActivity.this);
+                alert1.setTitle("thank you");
+                alert1.setMessage("feedback received");
+                AlertDialog alertdialog=alert1.create();
+                alertdialog.show();
+                rg1.clearCheck();
+                rg2.clearCheck();
+            }
+        });
+
+        Button btn=(Button)findViewById(R.id.button2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rg1.clearCheck();
+                rg2.clearCheck();
+                Toast.makeText(MainActivity.this, "reset done", Toast.LENGTH_SHORT).show();
+
+                //AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
+                //    alert.setTitle("thank you");
+                //  alert.setMessage("feedback has received");
+
+                //AlertDialog alertdialog=alert.create();
+                //  alertdialog.show();
+
+
+            }
+        });
+
+
+
+
+2.xml
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:text="1) what is your fav programming  language" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/rg1"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="java" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="python" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="html" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/rg1"
+        android:layout_marginTop="26dp"
+        android:text="2) what is your lappy configuration" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/rg2">
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="i3" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="i5" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="i7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rg2"
+        android:layout_alignStart="@+id/rg2"
+        android:layout_below="@+id/rg2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="65dp"
+        android:text="submit" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="reset" />

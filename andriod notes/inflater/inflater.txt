@@ -1,0 +1,56 @@
+basically to create a inflater 
+-first of all we should create directory 
+		rightclick on RES
+				NEW
+				   DIRECTORY (give a name to directory)
+		      and now right click on create directory and create 
+									NEW  
+ 									   XML 
+									      layoutXMLfile	
+
+
+1.xml(this xml is completly different from main xml file )
+2.java(in java code we should write code below the first public class)
+
+
+1.xml
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuitem1"
+          android:title="menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <item android:id="@+id/menuitem2"
+        android:title="menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</menu>
+
+
+
+2.java
+
+
+       //this override is created for 3doted menu options
+       @Override
+       public boolean onCreateOptionsMenu(Menu menu) {
+           getMenuInflater().inflate(R.menu.menu_main,menu);
+           return super.onCreateOptionsMenu(menu);
+       }
+       //this  override is created for 3doted menu options
+       @Override
+       public boolean onOptionsItemSelected(MenuItem item) {
+
+		//this switch is just create to display toast when ever a particular option is selected
+           switch (item.getItemId()){
+               case R.id.menuitem1:
+                   Toast.makeText(this, "this is menu1", Toast.LENGTH_SHORT).show();
+                   break;
+               case R.id.menuitem2:
+                   Toast.makeText(this, "this is menu2", Toast.LENGTH_SHORT).show();
+                        break;
+           }
+           return super.onOptionsItemSelected(item);
+       }

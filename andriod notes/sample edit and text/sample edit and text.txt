@@ -1,0 +1,195 @@
+this is just for sample and basic edit and text view concepts.
+1.java
+2.xml
+
+
+
+1.java
+
+
+        final EditText ed1=(EditText)findViewById(R.id.ed10);
+        final EditText ed2=(EditText)findViewById(R.id.ed20);
+        final EditText ed3=(EditText)findViewById(R.id.ed30);
+
+        Button b1=(Button)findViewById(R.id.b1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tv1=(TextView)findViewById(R.id.tv1);
+                tv1.setText(ed1.getText() .toString());
+                TextView tv2=(TextView)findViewById(R.id.tv2);
+                tv2.setText(ed2.getText().toString());
+                TextView tv3=(TextView)findViewById(R.id.tv3);
+                tv3.setText(ed3.getText().toString());
+
+            }
+        });
+
+        Button B2=(Button)findViewById(R.id.b2);
+        B2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tv1=(TextView)findViewById(R.id.tv1);
+                tv1.setText("");
+                TextView tv2=(TextView)findViewById(R.id.tv2);
+                tv2.setText("");
+                TextView tv3=(TextView)findViewById(R.id.tv3);
+                tv3.setText("");
+                EditText ed1=(EditText)findViewById(R.id.ed10);
+                ed1.setText("");
+                EditText ed2=(EditText)findViewById(R.id.ed20);
+                ed2.setText("");
+                EditText ed3=(EditText)findViewById(R.id.ed30);
+                ed3.setText("");
+            }
+        });
+
+
+
+
+2.xml
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_alignBaseline="@+id/ed10"
+        android:layout_alignBottom="@+id/ed10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="phne"
+        android:layout_below="@+id/ed1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:layout_alignBaseline="@+id/ed30"
+        android:layout_alignBottom="@+id/ed30"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b1"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:text="clear" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_alignStart="@+id/b1"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="44dp"
+        android:text="name" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="52dp"
+        android:text="phne" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="51dp"
+        android:text="city" />
+
+    <EditText
+        android:id="@+id/ed10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/ed30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/ed20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed10"
+        android:layout_alignStart="@+id/ed10"
+        android:layout_alignTop="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ed30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/b1"
+        android:layout_toRightOf="@+id/b1"
+        android:layout_toEndOf="@+id/b1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/b1"
+        android:layout_toRightOf="@+id/b1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_alignTop="@+id/textView6" />
