@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final  String[] countries={"select your country","India","Sri lanka","USA","UK","Africa","Afghanistan","Hungary","Russia","Indonesia","Iraq"};
+        final  String[] countries={"select your country","India","Sri lanka","USA","UK","Africa","Afghanistan","Hungary","Russia","Indonesia","Iraq","Netherlands","Portugal","Philippines","Malawi","New Zealand","Malaysia","Maldives","Mali","Chad","Chile","China"};
         Spinner spinner=(Spinner)findViewById(R.id.spinner);
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,countries);
