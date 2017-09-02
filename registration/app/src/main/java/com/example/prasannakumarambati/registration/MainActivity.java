@@ -54,10 +54,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("submit details");
-                alert.setMessage("press ok to submit \n cancel to terminate");
+                alert.setMessage("press ok to submit \ncancel to terminate");
                 alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        ed1.setText("");
+                        ed2.setText("");
+                        ed3.setText("");
+                        ed4.setText("");
+                        ed5.setText("");
+                        ed6.setText("");
+                        ed7.setText("");
+                        ed8.setText("");
+                        ed9.setText("");
+                        ed10.setText("");
+                        ed11.setText("");
+                        ed12.setText("");
                         Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -90,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 ed10.setText("");
                 ed11.setText("");
                 ed12.setText("");
+                     Toast.makeText(getApplicationContext(),"details cleared",Toast.LENGTH_SHORT).show();
             }
         });
     }
