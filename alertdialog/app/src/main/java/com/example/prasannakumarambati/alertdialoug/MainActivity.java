@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder alertdialog =new AlertDialog.Builder(MainActivity.this);
                 alertdialog.setTitle("hello");
                 alertdialog.setMessage("world");
-                alertdialog.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                alertdialog.setPositiveButton("ok",new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(getApplicationContext(),"accepted the warning",Toast.LENGTH_SHORT).show();

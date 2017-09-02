@@ -1,10 +1,13 @@
 package com.example.prasannakumarambati.registration;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText ed9;
     EditText ed10;
     EditText ed11;
+    EditText ed12;
     Button b1;
     Button b2;
 
@@ -39,7 +43,35 @@ public class MainActivity extends AppCompatActivity {
         ed9= (EditText) findViewById(R.id.ed9);
         ed10= (EditText) findViewById(R.id.ed10);
         ed11= (EditText) findViewById(R.id.ed11);
+        ed12= (EditText) findViewById(R.id.ed12);
 
+
+
+
+        b1= (Button) findViewById(R.id.b1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
+                alert.setTitle("submit details");
+                alert.setMessage("press ok to submit \n cancel to terminate");
+                alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
+                    }
+                });
+                alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(),"registration failed",Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                AlertDialog alertDialog=alert.create();
+                alertDialog.show();
+            }
+        });
 
 
         b2= (Button) findViewById(R.id.b2);
@@ -57,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 ed9.setText("");
                 ed10.setText("");
                 ed11.setText("");
+                ed12.setText("");
             }
         });
     }
