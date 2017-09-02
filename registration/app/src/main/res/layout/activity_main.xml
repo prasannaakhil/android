@@ -175,20 +175,21 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:ems="10"
-        android:hint="Name"
+        android:hint="name"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
+
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:ems="10"
+        android:hint="email-id"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed3"
@@ -198,42 +199,45 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView3"
         android:ems="10"
-        android:inputType="textPersonName"
-        />
+        android:hint="date of birth"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:hint="phone no"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-
         android:layout_alignBaseline="@+id/textView7"
         android:layout_alignBottom="@+id/textView7"
+
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:ems="10"
+        android:hint="aadar no"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-
         android:layout_alignBaseline="@+id/textView8"
         android:layout_alignBottom="@+id/textView8"
+
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:ems="10"
+        android:hint="pan number"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed7"
@@ -243,8 +247,8 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView8"
         android:ems="10"
-        android:inputType="textPersonName"
-        />
+        android:hint="license"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed8"
@@ -254,8 +258,8 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView9"
         android:ems="10"
-        android:inputType="textPersonName"
-         />
+        android:hint="school"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed9"
@@ -265,8 +269,8 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView10"
         android:ems="10"
-        android:inputType="textPersonName"
-         />
+        android:hint="inter"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ed10"
@@ -276,6 +280,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:ems="10"
+        android:hint="eng"
         android:inputType="textPersonName" />
 
     <Button
@@ -314,6 +319,7 @@
         android:layout_alignStart="@+id/ed11"
         android:layout_below="@+id/ed11"
         android:ems="10"
+        android:hint="acc no"
         android:inputType="textPersonName" />
 
 
