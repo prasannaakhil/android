@@ -1,6 +1,7 @@
 package com.example.prasannakumarambati.registration;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
                         ed11.setText("");
                         ed12.setText("");
                         Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
+
+                        Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                        startActivity(intent);
+
                     }
                 });
                 alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
