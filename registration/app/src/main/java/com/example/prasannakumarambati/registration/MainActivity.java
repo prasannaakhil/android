@@ -74,8 +74,10 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
 
                         Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-                        intent.putExtra("hello","android");
+
                         startActivity(intent);
+
+
 
                     }
                 });

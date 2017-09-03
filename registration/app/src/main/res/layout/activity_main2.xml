@@ -116,79 +116,79 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/tv2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView33"
+                android:id="@+id/tv3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/tv4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView35"
+                android:id="@+id/tv5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView36"
+                android:id="@+id/tv6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
 
             <TextView
-                android:id="@+id/textView37"
+                android:id="@+id/tv7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
 
             <TextView
-                android:id="@+id/textView38"
+                android:id="@+id/tv8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
 
             <TextView
-                android:id="@+id/textView39"
+                android:id="@+id/tv9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
              />
 
             <TextView
-                android:id="@+id/textView41"
+                android:id="@+id/tv10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView42"
+                android:id="@+id/tv11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
 
             <TextView
-                android:id="@+id/textView43"
+                android:id="@+id/tv12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
 
             <TextView
-                android:id="@+id/textView44"
+                android:id="@+id/tv13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                  />
