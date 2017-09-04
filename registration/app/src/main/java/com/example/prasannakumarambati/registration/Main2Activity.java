@@ -35,8 +35,9 @@ public class Main2Activity extends AppCompatActivity {
 
         tv1 = (TextView) findViewById(R.id.tv1);
 
-        Intent intent = getIntent();
 
+        Intent i = getIntent();
+        tv1.setText(i.getStringExtra("text"));
 
 
 

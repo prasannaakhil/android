@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ed1= (EditText) findViewById(R.id.ed1);
+        ed1=(EditText)findViewById(R.id.ed1);
         ed2= (EditText) findViewById(R.id.ed2);
         ed3= (EditText) findViewById(R.id.ed3);
         ed4= (EditText) findViewById(R.id.ed4);
@@ -73,13 +73,14 @@ public class MainActivity extends AppCompatActivity {
                         ed12.setText("");
                         Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
 
-                        Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-
+                        Intent intent=new Intent(getApplicationContext(),Main2Activity.class);
+                        intent.putExtra ( "text", ed1.getText().toString() );
                         startActivity(intent);
 
 
 
                     }
+
                 });
                 alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
