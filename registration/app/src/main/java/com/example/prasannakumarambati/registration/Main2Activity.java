@@ -34,10 +34,38 @@ public class Main2Activity extends AppCompatActivity {
 
 
         tv1 = (TextView) findViewById(R.id.tv1);
+        tv2 = (TextView) findViewById(R.id.tv2);
+        tv3 = (TextView) findViewById(R.id.tv3);
+        tv4 = (TextView) findViewById(R.id.tv4);
+        tv5 = (TextView) findViewById(R.id.tv5);
+        tv6 = (TextView) findViewById(R.id.tv6);
+        tv7 = (TextView) findViewById(R.id.tv7);
+        tv8 = (TextView) findViewById(R.id.tv8);
+        tv9 = (TextView) findViewById(R.id.tv9);
+        tv10 = (TextView) findViewById(R.id.tv10);
+        tv11= (TextView) findViewById(R.id.tv11);
+        tv12 = (TextView) findViewById(R.id.tv12);
+        tv13 = (TextView) findViewById(R.id.tv13);
 
 
-        Intent i = getIntent();
-        tv1.setText(i.getStringExtra("text"));
+        Bundle bb;
+        bb=getIntent().getExtras();
+        tv1.setText(bb.getString("name"));
+        tv2.setText(bb.getString("email"));
+        tv3.setText(bb.getString("dob"));
+        tv4.setText(bb.getString("phone"));
+        tv5.setText(bb.getString("gender"));
+        tv6.setText(bb.getString("mobile"));
+        tv7.setText(bb.getString("pan"));
+        tv8.setText(bb.getString("license"));
+        tv9.setText(bb.getString("school"));
+        tv10.setText(bb.getString("inter"));
+        tv11.setText(bb.getString("eng"));
+        tv12.setText(bb.getString("about"));
+        tv13.setText(bb.getString("acc"));
+
+
+
 
 
 
@@ -45,6 +73,7 @@ public class Main2Activity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 finish();
             }
         });

@@ -48,15 +48,62 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         b1= (Button) findViewById(R.id.b1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+
+
+
                 AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("submit details");
                 alert.setMessage("press ok to submit \ncancel to terminate");
                 alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                        Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
+
+                        Intent intent=new Intent(getApplicationContext(),Main2Activity.class);
+                        intent.putExtra ( "name", ed1.getText().toString() );
+                        intent.putExtra ( "email", ed2.getText().toString() );
+                        intent.putExtra ( "dob", ed3.getText().toString() );
+                        intent.putExtra ( "phone", ed4.getText().toString() );
+
+                        intent.putExtra ( "mobile", ed5.getText().toString() );
+                        intent.putExtra ( "pan", ed6.getText().toString() );
+                        intent.putExtra ( "license", ed7.getText().toString() );
+                        intent.putExtra ( "school", ed8.getText().toString() );
+                        intent.putExtra ( "inter", ed9.getText().toString() );
+                        intent.putExtra ( "eng", ed10.getText().toString() );
+                        intent.putExtra ( "about", ed11.getText().toString() );
+                        intent.putExtra ( "acc", ed12.getText().toString() );
+
+                        startActivity(intent);
+
+
+                        ed1.setText("");
+                        ed2.setText("");
+                        ed3.setText("");
+                        ed4.setText("");
+                        ed5.setText("");
+                        ed6.setText("");
+                        ed7.setText("");
+                        ed8.setText("");
+                        ed9.setText("");
+                        ed10.setText("");
+                        ed11.setText("");
+                        ed12.setText("");
+
+
+
+                    }
+
+                });
+                alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         ed1.setText("");
@@ -71,20 +118,6 @@ public class MainActivity extends AppCompatActivity {
                         ed10.setText("");
                         ed11.setText("");
                         ed12.setText("");
-                        Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
-
-                        Intent intent=new Intent(getApplicationContext(),Main2Activity.class);
-                        intent.putExtra ( "text", ed1.getText().toString() );
-                        startActivity(intent);
-
-
-
-                    }
-
-                });
-                alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(getApplicationContext(),"registration failed",Toast.LENGTH_SHORT).show();
                     }
                 });
