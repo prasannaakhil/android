@@ -93,7 +93,7 @@ public class Main2Activity extends AppCompatActivity {
 
                 AlertDialog.Builder alert =new AlertDialog.Builder(Main2Activity.this);
                 alert.setTitle("do you want to close this application");
-                alert.setMessage("yes-to exit /nno-to terminate");
+                alert.setMessage("yes-to exit \nno-to terminate");
                 alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
