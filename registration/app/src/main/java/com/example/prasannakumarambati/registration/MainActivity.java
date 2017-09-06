@@ -145,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 ed11.setText("");
                 ed12.setText("");
                      Toast.makeText(getApplicationContext(),"details cleared",Toast.LENGTH_SHORT).show();
+
             }
         });
     }
