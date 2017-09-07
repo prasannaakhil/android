@@ -222,47 +222,44 @@
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="Name"
-                android:inputType="textPersonName"
+                android:inputType="textCapCharacters"
                 android:padding="0dp"
                 android:paddingLeft="0dp" />
-
-
-
 
 
             <EditText
                 android:id="@+id/ed2"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="email"
-                android:inputType="textPersonName"
-                android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:inputType="textEmailAddress"
+                android:padding="0dp" />
 
             <EditText
                 android:id="@+id/ed3"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="date of birth"
-                android:inputType="textPersonName"
-                android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:inputType="date"
+                android:padding="0dp" />
 
 
             <EditText
                 android:id="@+id/ed4"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="phone no"
-                android:inputType="textPersonName"
-                android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:inputType="number"
+                android:padding="0dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -290,23 +287,25 @@
                 android:id="@+id/ed5"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="aadar"
-                android:inputType="textPersonName"
-                android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:inputType="number"
+                android:padding="0dp" />
 
             <EditText
                 android:id="@+id/ed6"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="pan no"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
 
 
             <EditText
@@ -325,12 +324,12 @@
                 android:id="@+id/ed8"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
+                android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="account no"
-                android:inputType="textPersonName"
-                android:padding="0dp"
-                android:layout_weight="0.05"/>
+                android:inputType="number"
+                android:padding="0dp" />
 
             <EditText
                 android:id="@+id/ed9"
