@@ -221,7 +221,7 @@
                 android:layout_weight="0.05"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="name"
                 android:inputType="textCapCharacters"
                 android:padding="0dp"
                 android:paddingLeft="0dp" />
