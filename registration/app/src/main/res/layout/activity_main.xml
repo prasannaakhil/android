@@ -213,7 +213,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="12dp"
                 android:background="@android:color/darker_gray"
-                android:text="eng"
+                android:text="engineering"
                 android:textAlignment="center"
 
                 android:textColor="@android:color/white" />
@@ -226,7 +226,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:text="about your self"
                 android:textAlignment="center"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="fill_parent"
@@ -427,7 +428,8 @@
                 android:ems="10"
                 android:hint="enginnering"
                 android:inputType="textPersonName"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold|italic" />
 
             <EditText
                 android:id="@+id/ed12"
@@ -436,7 +438,8 @@
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="about your self"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:textStyle="italic" />
 
             <View
                 android:layout_width="fill_parent"
