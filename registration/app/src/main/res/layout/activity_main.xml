@@ -54,6 +54,8 @@
 
         android:layout_marginTop="8dp"
         android:text="Enter your details"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -103,7 +105,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:text="Name:"
                 android:textAlignment="center"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -113,7 +116,8 @@
                 android:background="@android:color/darker_gray"
                 android:text="Email:"
                 android:textAlignment="center"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView19"
