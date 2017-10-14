@@ -389,7 +389,8 @@
                 android:ems="10"
                 android:hint="account no"
                 android:inputType="number"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold|italic" />
 
             <EditText
                 android:id="@+id/ed9"
@@ -400,7 +401,8 @@
                 android:ems="10"
                 android:hint="school"
                 android:inputType="textPersonName"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold|italic" />
 
 
             <EditText
@@ -412,7 +414,8 @@
                 android:ems="10"
                 android:hint="inter"
                 android:inputType="textPersonName"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold|italic" />
 
 
             <EditText
