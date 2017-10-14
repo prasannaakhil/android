@@ -273,7 +273,8 @@
                 android:hint="name"
                 android:inputType="textCapCharacters"
                 android:padding="0dp"
-                android:paddingLeft="0dp" />
+                android:paddingLeft="0dp"
+                android:textStyle="bold|italic" />
 
 
             <EditText
@@ -285,7 +286,8 @@
                 android:ems="10"
                 android:hint="email"
                 android:inputType="textEmailAddress"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold|italic" />
 
             <EditText
                 android:id="@+id/ed3"
