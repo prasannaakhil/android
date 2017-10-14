@@ -308,7 +308,9 @@
                 android:ems="10"
                 android:hint="phone no"
                 android:inputType="number"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -343,7 +345,8 @@
                 android:ems="10"
                 android:hint="aadar"
                 android:inputType="number"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/ed6"
