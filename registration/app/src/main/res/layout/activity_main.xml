@@ -57,7 +57,6 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -453,7 +452,7 @@
                 android:ems="10"
                 android:hint="about your self"
                 android:inputType="textMultiLine"
-                android:textStyle="italic" />
+                android:textStyle="bold|italic" />
 
             <View
                 android:layout_width="fill_parent"
