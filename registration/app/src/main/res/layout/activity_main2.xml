@@ -35,9 +35,9 @@
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name:"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="Name:"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -49,9 +49,9 @@
                 android:id="@+id/textView19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date-of-birth:"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="Date-of-birth:"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -63,9 +63,9 @@
                 android:id="@+id/textView21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gender"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="Gender"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView22"
@@ -77,9 +77,9 @@
                 android:id="@+id/textView23"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pan card no:"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="Pan card no:"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView24"
@@ -91,9 +91,9 @@
                 android:id="@+id/textView25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="School"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="School"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView26"
@@ -105,9 +105,9 @@
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="eng"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="eng"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textView28"
@@ -119,14 +119,14 @@
                 android:id="@+id/textView29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="account number"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:text="account number"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="254dp"
+            android:layout_height="327dp"
             android:layout_gravity="right"
             android:orientation="vertical">
 
@@ -134,93 +134,93 @@
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/tv12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tv13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"/>
+                android:gravity="center"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </LinearLayout>
