@@ -83,6 +83,12 @@
             android:layout_height="fill_parent"
             android:background="@android:color/black" />
 
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:background="@android:color/black" />
+
         <LinearLayout
             android:layout_width="132dp"
             android:layout_height="match_parent"
@@ -249,12 +255,6 @@
                 android:background="@android:color/black" />
 
         </LinearLayout>
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="1dp"
-            android:background="@android:color/black" />
 
         <View
             android:layout_width="2dp"
