@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("submit details");
-                alert.setMessage("press OK to SUBMIT \ncancel to terminate");
+                alert.setMessage("press OK to SUBMIT \npress CANCEL to TERMINATE");
                 alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
