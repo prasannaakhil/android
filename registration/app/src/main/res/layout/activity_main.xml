@@ -53,7 +53,8 @@
         android:layout_marginRight="8dp"
 
         android:layout_marginTop="8dp"
-        android:text="Enter your details"
+        android:text="-:-Enter your details-:-"
+        android:textColor="@android:color/holo_red_light"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
