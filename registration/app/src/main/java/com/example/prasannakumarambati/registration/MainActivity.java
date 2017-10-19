@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     EditText ed12;
     Button b1;
     Button b2;
-
+    Button b3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,6 +145,35 @@ public class MainActivity extends AppCompatActivity {
                 ed11.setText("");
                 ed12.setText("");
                      Toast.makeText(getApplicationContext(),"details cleared",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        b3=(Button)findViewById(R.id.b3);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alert =new AlertDialog.Builder(MainActivity.this);
+                alert.setTitle("do you want to close this application");
+                alert.setMessage("yes-to-exit \nno-to-terminate");
+                alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        finish();
+                        moveTaskToBack(true);
+                        Toast.makeText(getApplicationContext(),"application closed",Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(),"exit process terminated",Toast.LENGTH_SHORT).show();
+                    }
+                });
+                AlertDialog alertDialog=alert.create();
+                alertDialog.show();
 
             }
         });
