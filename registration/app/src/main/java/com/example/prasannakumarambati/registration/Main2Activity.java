@@ -29,12 +29,11 @@ public class Main2Activity extends AppCompatActivity {
     TextView tv13;
     Button b3;
     Button b4;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
 
         tv1 = (TextView) findViewById(R.id.tv1);
         tv2 = (TextView) findViewById(R.id.tv2);
@@ -49,8 +48,7 @@ public class Main2Activity extends AppCompatActivity {
         tv11= (TextView) findViewById(R.id.tv11);
         tv12 = (TextView) findViewById(R.id.tv12);
         tv13 = (TextView) findViewById(R.id.tv13);
-
-
+        
         Bundle bb;
         bb=getIntent().getExtras();
         tv1.setText(bb.getString("name"));
