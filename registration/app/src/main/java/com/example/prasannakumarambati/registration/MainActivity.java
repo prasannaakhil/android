@@ -89,14 +89,13 @@ public class MainActivity extends AppCompatActivity {
                         ed11.setText("");
                         ed12.setText("");
 
-
-
                     }
 
                 });
                 alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+
                         ed1.setText("");
                         ed2.setText("");
                         ed3.setText("");
@@ -109,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                         ed10.setText("");
                         ed11.setText("");
                         ed12.setText("");
+
                         Toast.makeText(getApplicationContext(),"registration failed",Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -118,11 +118,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         b2= (Button) findViewById(R.id.b2);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 ed1.setText("");
                 ed2.setText("");
                 ed3.setText("");
@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                 ed10.setText("");
                 ed11.setText("");
                 ed12.setText("");
-                     Toast.makeText(getApplicationContext(),"details cleared",Toast.LENGTH_SHORT).show();
 
+                     Toast.makeText(getApplicationContext(),"details cleared",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 AlertDialog.Builder alert =new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("do you want to close this application");
                 alert.setMessage("yes-to-exit \nno-to-terminate");
@@ -160,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        
                         Toast.makeText(getApplicationContext(),"exit process terminated",Toast.LENGTH_SHORT).show();
                     }
                 });
