@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 alert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        
+
                         Toast.makeText(getApplicationContext(),"exit process terminated",Toast.LENGTH_SHORT).show();
                     }
                 });
