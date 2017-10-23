@@ -46,16 +46,10 @@ public class MainActivity extends AppCompatActivity {
         ed11= (EditText) findViewById(R.id.ed11);
         ed12= (EditText) findViewById(R.id.ed12);
 
-
-
         b1= (Button) findViewById(R.id.b1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
-
 
                 AlertDialog.Builder alert=new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("submit details");
@@ -64,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-
                         Toast.makeText(getApplicationContext(),"registration was successfull",Toast.LENGTH_SHORT).show();
 
                         Intent intent=new Intent(getApplicationContext(),Main2Activity.class);
@@ -72,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra ( "email", ed2.getText().toString() );
                         intent.putExtra ( "dob", ed3.getText().toString() );
                         intent.putExtra ( "phone", ed4.getText().toString() );
-
                         intent.putExtra ( "mobile", ed5.getText().toString() );
                         intent.putExtra ( "pan", ed6.getText().toString() );
                         intent.putExtra ( "license", ed7.getText().toString() );
@@ -83,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra ( "acc", ed12.getText().toString() );
 
                         startActivity(intent);
-
 
                         ed1.setText("");
                         ed2.setText("");
