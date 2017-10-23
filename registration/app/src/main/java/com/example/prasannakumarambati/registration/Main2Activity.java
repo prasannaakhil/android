@@ -73,10 +73,6 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-
-
-
-
         b4 = (Button) findViewById(R.id.b4);
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
