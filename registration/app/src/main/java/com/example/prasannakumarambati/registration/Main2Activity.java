@@ -48,7 +48,7 @@ public class Main2Activity extends AppCompatActivity {
         tv11= (TextView) findViewById(R.id.tv11);
         tv12 = (TextView) findViewById(R.id.tv12);
         tv13 = (TextView) findViewById(R.id.tv13);
-        
+
         Bundle bb;
         bb=getIntent().getExtras();
         tv1.setText(bb.getString("name"));
@@ -65,19 +65,13 @@ public class Main2Activity extends AppCompatActivity {
         tv12.setText(bb.getString("about"));
         tv13.setText(bb.getString("acc"));
 
-
-
-
         b3 = (Button) findViewById(R.id.b3);
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 finish();
             }
         });
-
 
 
 
