@@ -35,7 +35,8 @@
             <TextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="Name:"
                 android:textColor="@android:color/white" />
@@ -43,13 +44,15 @@
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
                 android:text="Email:" />
 
             <TextView
                 android:id="@+id/textView19"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="Date-of-birth:"
                 android:textColor="@android:color/white" />
