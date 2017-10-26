@@ -34,7 +34,6 @@ public class datepicker extends AppCompatActivity {
         });
 
         Intent intent=getIntent();
-
         b4 = (Button) findViewById(R.id.b4);
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
