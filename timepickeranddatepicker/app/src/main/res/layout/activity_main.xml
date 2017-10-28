@@ -40,7 +40,7 @@
 
     <Button
         android:id="@+id/b2"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+        style="@android:style/Widget.Holo.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -48,6 +48,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="click for date"
+        android:textColor="@android:color/holo_blue_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintLeft_toLeftOf="parent"
