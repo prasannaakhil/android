@@ -40,7 +40,7 @@
 
     <Button
         android:id="@+id/b2"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
