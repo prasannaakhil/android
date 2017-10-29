@@ -16,6 +16,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:headerBackground="@android:color/holo_blue_light"
+        android:touchscreenBlocksFocus="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintLeft_toLeftOf="parent"
