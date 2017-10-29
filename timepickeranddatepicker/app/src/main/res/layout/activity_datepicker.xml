@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/b4"
-        style="@android:style/Widget.Holo.Button.Borderless.Small"
+        style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
