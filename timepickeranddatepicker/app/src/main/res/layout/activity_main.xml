@@ -8,19 +8,19 @@
 
     <TimePicker
         android:id="@+id/timePicker"
-        android:layout_width="371dp"
-        android:layout_height="362dp"
+        android:layout_width="343dp"
+        android:layout_height="351dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="-184dp"
         android:layout_marginTop="8dp"
         android:headerBackground="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <Button
         android:id="@+id/b1"
@@ -36,11 +36,11 @@
         android:textColor="@android:color/holo_green_light"
         android:textColorLink="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/b2"
@@ -55,10 +55,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.8" />
 
 </android.support.constraint.ConstraintLayout>
