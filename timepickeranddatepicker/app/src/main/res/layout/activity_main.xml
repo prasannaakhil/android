@@ -8,8 +8,8 @@
 
     <TimePicker
         android:id="@+id/timePicker"
-        android:layout_width="362dp"
-        android:layout_height="367dp"
+        android:layout_width="371dp"
+        android:layout_height="404dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="-184dp"
@@ -20,7 +20,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/b1"
@@ -36,11 +36,10 @@
         android:textColor="@android:color/holo_green_light"
         android:textColorLink="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.892" />
 
     <Button
         android:id="@+id/b2"
@@ -55,10 +54,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
         android:textColor="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
