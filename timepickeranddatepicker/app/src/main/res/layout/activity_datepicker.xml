@@ -46,8 +46,8 @@
     <Button
         android:id="@+id/b3"
         style="@android:style/Widget.Material.Light.Button.Inset"
-        android:layout_width="295dp"
-        android:layout_height="39dp"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -56,9 +56,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         android:textColor="@android:color/holo_blue_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.853" />
 </android.support.constraint.ConstraintLayout>
